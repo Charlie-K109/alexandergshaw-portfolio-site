@@ -173,3 +173,87 @@ body {
     .avatar { width: 64px; height: 64px; }
     .project-card { padding: 1.2rem 0.7rem; }
 }
+
+.dark-mode {
+    --primary: #90caf9;
+    --secondary: #222e3c;
+    --background: #181a20;
+    --text: #e3eafc;
+    --accent: #222e3c;
+}
+.dark-mode body {
+    background: var(--background);
+    color: var(--text);
+}
+.dark-mode .navbar {
+    background: var(--accent);
+    box-shadow: 0 1px 8px rgba(0,0,0,0.12);
+}
+.dark-mode .navbar-brand,
+.dark-mode .nav-link {
+    color: var(--primary) !important;
+}
+.dark-mode .nav-link.active, .dark-mode .nav-link:focus, .dark-mode .nav-link:hover {
+    color: #fff !important;
+}
+.dark-mode .section,
+.dark-mode .bg-white,
+.dark-mode .fade-section {
+    background: #222e3c !important;
+    color: #e3eafc !important;
+}
+.dark-mode .section-title,
+.dark-mode .fw-bold.text-primary.mb-3,
+.dark-mode .navbar-brand,
+.dark-mode .nav-link {
+    color: #90caf9 !important;
+}
+.dark-mode .card-title,
+.dark-mode .card-text,
+.dark-mode .badge,
+.dark-mode .btn,
+.dark-mode .contact-btn {
+    color: #e3eafc !important;
+}
+.dark-mode .project-card {
+    background: #222e3c !important;
+    color: #e3eafc !important;
+    box-shadow: 0 2px 24px rgba(45,114,217,0.18);
+}
+.dark-mode .card-img-top {
+    background: #181a20;
+    border-radius: 1rem 1rem 0 0;
+}
+.dark-mode .filter-btn {
+    background: #181a20 !important;
+    color: #90caf9 !important;
+    border-color: #333 !important;
+}
+.dark-mode .filter-btn.active, .dark-mode .filter-btn:focus {
+    background: #90caf9 !important;
+    color: #222e3c !important;
+    border-color: #90caf9 !important;
+}
+.dark-mode .btn-outline-primary {
+    color: #90caf9 !important;
+    border-color: #90caf9 !important;
+    background: transparent !important;
+}
+.dark-mode .btn-outline-primary:hover, .dark-mode .btn-outline-primary:focus {
+    background: #90caf9 !important;
+    color: #222e3c !important;
+    border-color: #90caf9 !important;
+}
+.dark-mode .btn-success {
+    background: #181a20 !important;
+    color: #90caf9 !important;
+    border: none !important;
+}
+.dark-mode .btn-success:hover, .dark-mode .btn-success:focus {
+    background: #90caf9 !important;
+    color: #222e3c !important;
+}
+.dark-mode .text-muted,
+.dark-mode .text-muted.mb-4 {
+    color: #b0c4d6 !important;
+}

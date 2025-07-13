@@ -11,7 +11,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body>
+<body class="{% if dark_mode %}dark-mode{% endif %}">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
@@ -26,6 +26,13 @@
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
+                <a href="{{ url_for('toggle_dark_mode') }}" class="btn btn-outline-secondary ms-3" id="darkModeToggle">
+                    {% if dark_mode %}
+                        <i class="bi bi-brightness-high"></i> Light Mode
+                    {% else %}
+                        <i class="bi bi-moon"></i> Dark Mode
+                    {% endif %}
+                </a>
             </div>
         </div>
     </nav>
